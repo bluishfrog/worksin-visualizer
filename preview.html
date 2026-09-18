@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Preview</title>
+
+  <link rel="stylesheet" href="css/workskin_orig.css">
+  <link rel="stylesheet" href="css/workskin_orig.css">
+
+  <div id="preview-style-placeholder"></div>
+
+  <style>
+    /* Ensure the preview container uses the full width and contains floats */
+    #preview-root {
+      width: 100%
+    }
+
+    p {
+      margin-bottom: 1.7em;
+    }
+
+    #workskin .twt-replybox p {
+      margin-bottom: 1em;
+    }
+
+    #workskin .twt-replybox {
+      margin-top: 0em;
+    }
+  </style>
+
+  <!-- SCRIPTS -->
+  <script src="js/loadComponents.js"></script>
+
+</head>
+
+<body>
+  <div id="preview-root"></div>
+
+  <script>
+    fetch('test_data/TestProject/output.html')
+      .then(response => response.text())
+      .then(html => {
+        // Wrap the Ao3 content inside a div with id "workskin"
+        document.getElementById('preview-root').innerHTML = `<div id="workskin">${html}</div>`;
+      })
+      .catch(err => {
+        document.getElementById('preview-root').innerHTML = '<p style="color:red;">Failed to load preview</p>';
+        console.error(err);
+      });
+  </script>
+</body>
+
+</html>

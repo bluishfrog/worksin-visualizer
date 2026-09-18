@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="head-placeholder"></div>
+    <script src="js/loadComponents.js"></script>
+</head>
+
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- NAV -->
+        <div id="nav-placeholder"></div>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- Split Screen for preview -->
+            <div class="builder-section-container">
+
+                <!-- left side of builder, where the editor is -->
+                <div class="builder-section">
+                    <h2>HTML Editor</h2>
+
+                    <div class="editor-container">
+
+                        <label for="html-input">HTML</label>
+                        <textarea id="html-input" spellcheck="false">
+<h1>Hello World!</h1>
+<p>Edit the HTML on the left and see it appear here.</p>
+<button>Click me</button>
+    </textarea>
+
+                        <label for="css-input">CSS</label>
+                        <textarea id="css-input" spellcheck="false">
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: royalblue;
+}
+
+button {
+    background: royalblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+                        </textarea>
+
+                    </div>
+
+
+                </div>
+
+                <!-- right side of builder, where the preview is -->
+                <div class="builder-section">
+                    <h2>Preview</h2>
+                    <iframe id="preview-frame"
+                        style="width:100%; height:100%; border:none;"></iframe>
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <div id="footer-placeholder"></div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/loadComponents.js"></script>
+    <script src="js/htmlBuilder.js"></script>
+
+
+</body>
+
+
+</html>
