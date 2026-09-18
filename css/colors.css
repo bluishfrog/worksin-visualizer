@@ -1,0 +1,106 @@
+/* LIGHT THEME (default) */
+
+:root {
+
+    /* ---------- Neutrals ---------- */
+    --color-bg: #F9F9F9;
+    --color-surface: #FFFFFF;
+    --color-text: #333333;
+    --color-text-dark: #222222;
+    --color-text-muted: #555555;
+    --color-text-faint: #888888;
+
+    /* ---------- Brand ---------- */
+    --color-primary: #33337C;
+    --color-primary-soft: #33337C80;
+    --color-primary-fade: #33337C14;
+
+    /* ---------- Accent ---------- */
+    --color-accent: #C9F2FF;
+    --color-accent-hover: #B2E4F5;
+    --color-accent-soft: #C9F2FF80;
+
+    /* ---------- Borders ---------- */
+    --color-border: #D0D0D0;
+    --color-border-light: #E0E0E0;
+    --color-border-accent: #AEDAE8;
+
+    /* ---------- UI Greys ---------- */
+    --color-grey-100: #EEEEEE;
+    --color-grey-200: #DDDDDD;
+    --color-grey-300: #D0D0D0;
+
+    /* ---------- States ---------- */
+    --color-success: #B6E9C5;
+    --color-success-text: #2F7A4B;
+    --color-warning: #FFD6D6;
+    --color-warning-text: #aa3333;
+    --color-error: #FFB3B3;
+
+    /* ---------- Code ---------- */
+    --color-code-bg: #F4F4F4;
+    --color-code-text: #222222;
+
+    /* ---------- Shadows ---------- */
+    --shadow-sm: #0000000D;    /* 5% */
+    --shadow-md: #00000014;    /* 8% */
+    --shadow-lg: #0000001A;    /* 10% */
+    --shadow-xl: #0000001F;    /* 12% */
+    --shadow-2xl: #00000026;   /* 15% */
+    --shadow-3xl: #0000002E;   /* 18% */
+    --shadow-4xl: #00000040;   /* 25% */
+}
+
+/* DARK THEME */
+
+[data-theme="dark"] {
+
+    /* ---------- Neutrals  ---------- */
+    --color-bg: #121212;
+    --color-surface: #333333;
+    --color-text: #FFFFFF;
+    --color-text-dark: #FFFFFF;
+    --color-text-muted: #EEEEEE;
+    --color-text-faint: #BBBBBB;
+
+    /* ---------- Brand ---------- */
+    --color-primary: #C9F2FF;
+    --color-primary-soft: #B2E4F5;
+    --color-primary-fade: #C9F2FF80;
+
+    /* ---------- Accent ---------- */
+    --color-accent: #5858cf;
+    --color-accent-hover: #4a4ad1;
+    --color-accent-soft: #5858cf80;
+
+    /* ---------- Borders ---------- */
+    --color-border: #BBBBBB;
+    --color-border-light: #CCCCCC;
+    --color-border-accent: #5858cf;
+
+    /* ---------- UI Greys ---------- */
+    --color-grey-100: #14142A;
+    --color-grey-200: #1B1B36;
+    --color-grey-300: #807c7c;
+
+    /* ---------- States ---------- */
+    --color-success: #045e25;
+    --color-success-text: #B6E9C5;
+    --color-warning: #c93d3d;
+    --color-warning-text: #FFB3B3;
+    --color-error: #FFD6D6;
+
+    /* ---------- Code ---------- */
+    --color-code-bg: #343434;
+    --color-code-text: #EDEDF5;
+
+    /* ---------- Shadows ---------- */
+    --shadow-sm: #00000033;
+    --shadow-md: #00000055;
+    --shadow-lg: #00000077;
+    --shadow-xl: #00000099;
+    --shadow-2xl: #000000B3;
+    --shadow-3xl: #000000CC;
+    --shadow-4xl: #000000E6;
+
+}
