@@ -4,7 +4,7 @@ const previewFrame = document.getElementById("preview-frame");
 
 function updatePreview() {
     const html = htmlInput.value;
-    const css = cssInput.value;
+    const customCss = cssInput.value;
 
     const previewDocument = previewFrame.contentDocument;
 
@@ -15,12 +15,37 @@ function updatePreview() {
         <html>
         <head>
             <style>
-                ${css}
+                /* Preview base styles */
+                
+                #preview-root {
+                    width: 100%;
+                    overflow: auto;
+                }
+
+                p {
+                    margin-bottom: 1.7em;
+                }
+
+                #workskin .twt-replybox p {
+                    margin-bottom: 1em;
+                }
+
+                #workskin .twt-replybox {
+                    margin-top: 0em;
+                }
+
+                /* User's custom CSS */
+
+                ${customCss}
             </style>
         </head>
 
         <body>
-            ${html}
+            <div id="preview-root">
+                <div id="workskin">
+                    ${html}
+                </div>
+            </div>
         </body>
         </html>
     `);
@@ -31,5 +56,4 @@ function updatePreview() {
 htmlInput.addEventListener("input", updatePreview);
 cssInput.addEventListener("input", updatePreview);
 
-// Initial preview
 updatePreview();
