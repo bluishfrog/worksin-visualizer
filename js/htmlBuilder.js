@@ -49,7 +49,7 @@ function updatePreview() {
         }
 
         #workskin .twt-replybox p {
-            margin-bottom: 1em;
+            margin-bottom: 1.7em;
         }
 
         #workskin .twt-replybox {
