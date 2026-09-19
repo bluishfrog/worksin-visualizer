@@ -7,7 +7,6 @@ function loadComponent(id, file) {
 
             // Run post-load hooks for specific components
             if (id === "nav-placeholder") {
-                initNavDropdowns();
                 initThemeToggle();
             }
         });
