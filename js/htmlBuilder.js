@@ -39,12 +39,12 @@ function updatePreview() {
            Required Preview CSS
            ================================ */
 
-        #preview-root {
+        #workskin {
             width: 100%;
             overflow: auto;
         }
 
-        p {
+        #workskin p {
             margin-bottom: 1.7em;
         }
 
